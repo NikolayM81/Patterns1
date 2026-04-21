@@ -21,7 +21,7 @@ public class DeliveryTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    //@DisplayName("Should successful plan and replan meeting")
     void shouldSuccessfulPlanAndReplanMeeting() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
@@ -39,15 +39,17 @@ public class DeliveryTest {
         $(Selectors.byText("Запланировать")).click();
         $(Selectors.withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
         $("[data-test-id='success-notificfnion'] .notification__content")
-                .shouldHave(exactText("Встреча успешно запланирована на" + firstMeetingDate))
+                .shouldHave(exactText("Встреча успешно запланирована на " + firstMeetingDate))
                 .shouldBe(visible);
         $("[data-test-id=date] input").press(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id=date] input").setValue(secondMeetingDate);
         $(Selectors.byText("Запланировать")).click();
-        $("[data-test-id='replan-notificfnion'] .notification__content").shouldHave(text("У вас уже запланирована встреча на другую дату. Перепланировать?"))
+        $("[data-test-id='replan-notificfnion'] .notification__content")
+                .shouldHave(text("У вас уже запланирована встреча на другую дату. Перепланировать?"))
                 .shouldBe(visible);
         $("[data-test-id='replan-notificfnion'] button") .click();
-        $("[data-test-id='success-notificfnion'] .notification__content").shouldHave(exactText("Встреча успешно запланирована на " + secondMeetingDate))
+        $("[data-test-id='success-notificfnion'] .notification__content")
+                .shouldHave(exactText("Встреча успешно запланирована на " + secondMeetingDate))
                 .shouldBe(visible);
 
 

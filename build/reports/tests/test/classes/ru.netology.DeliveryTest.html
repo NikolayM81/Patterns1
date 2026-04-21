@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">8.352s</div>
+<div class="counter">8.759s</div>
 <p>duration</p>
 </div>
 </td>
@@ -74,12 +74,12 @@
 <h2>Failed tests</h2>
 <div class="test">
 <a name="shouldSuccessfulPlanAndReplanMeeting()"></a>
-<h3 class="failures">Should successful plan and replan meeting</h3>
+<h3 class="failures">shouldSuccessfulPlanAndReplanMeeting()</h3>
 <span class="code">
 <pre>Element not found {[data-test-id='success-notificfnion'] .notification__content}
-Expected: exact text &quot;Встреча успешно запланирована на25.04.2026&quot;
-Screenshot: file:/C:/Users/mutov/Desktop/Netology/Java/Project/Patterns1/build/reports/tests/1776797899496.0.png
-Page source: file:/C:/Users/mutov/Desktop/Netology/Java/Project/Patterns1/build/reports/tests/1776797899496.0.html
+Expected: exact text &quot;Встреча успешно запланирована на 25.04.2026&quot;
+Screenshot: file:/C:/Users/mutov/Desktop/Netology/Java/Project/Patterns1/build/reports/tests/1776798929926.0.png
+Page source: file:/C:/Users/mutov/Desktop/Netology/Java/Project/Patterns1/build/reports/tests/1776798929926.0.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-id='success-notificfnion'] .notification__content&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -92,7 +92,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy17.shouldHave(Unknown Source)
+	at app//com.sun.proxy.$Proxy16.shouldHave(Unknown Source)
 	at app//ru.netology.DeliveryTest.shouldSuccessfulPlanAndReplanMeeting(DeliveryTest.java:42)
 	at java.base@11.0.29/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.29/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -185,9 +185,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.29'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c356b51c680f142a6d6ba836040e1640, findElement {using=css selector, value=[data-test-id='success-notificfnion'] .notification__content}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\mutov\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50413}, goog:processID: 29672, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50413/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c356b51c680f142a6d6ba836040e1640
+Command: [5668bf14a73d92aea1084e228081074d, findElement {using=css selector, value=[data-test-id='success-notificfnion'] .notification__content}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\mutov\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62931}, goog:processID: 29504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62931/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5668bf14a73d92aea1084e228081074d
 	at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
 	at java.base@11.0.29/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.29/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -218,15 +218,13 @@ Session ID: c356b51c680f142a6d6ba836040e1640
 <thead>
 <tr>
 <th>Test</th>
-<th>Method name</th>
 <th>Duration</th>
 <th>Result</th>
 </tr>
 </thead>
 <tr>
-<td class="failures">Should successful plan and replan meeting</td>
 <td class="failures">shouldSuccessfulPlanAndReplanMeeting()</td>
-<td class="failures">8.352s</td>
+<td class="failures">8.759s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -235,18 +233,18 @@ Session ID: c356b51c680f142a6d6ba836040e1640
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\mutov\Desktop\Netology\Java\Project\Patterns1\build\downloads\1776797891427_32272_1
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\mutov\Desktop\Netology\Java\Project\Patterns1\build\downloads\1776798921359_24804_1
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-апр. 21, 2026 9:58:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+апр. 21, 2026 10:15:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 147
-апр. 21, 2026 9:58:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+апр. 21, 2026 10:15:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 147.0.7727.56. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=147.0.7727.56 Platform=windows
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.19.1
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.13.0 build revision: ba948ece5b*
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on windows (c356b51c680f142a6d6ba836040e1640)
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (c356b51c680f142a6d6ba836040e1640),proxy=null,downloadsFolder=C:\Users\mutov\Desktop\Netology\Java\Project\Patterns1\build\downloads\1776797891427_32272_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on windows (5668bf14a73d92aea1084e228081074d)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (5668bf14a73d92aea1084e228081074d),proxy=null,downloadsFolder=C:\Users\mutov\Desktop\Netology\Java\Project\Patterns1\build\downloads\1776798921359_24804_1] in 1 [size=1]
 [Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
 </pre>
 </span>
@@ -259,7 +257,7 @@ WARNING: Unable to find version of CDP to use for 147.0.7727.56. You may need to
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 21 апр. 2026 г., 21:58:20</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 21 апр. 2026 г., 22:15:30</p>
 </div>
 </div>
 </body>
