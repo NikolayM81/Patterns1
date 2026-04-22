@@ -38,7 +38,7 @@ public class DeliveryTest {
         $(".button").click();
         $(Selectors.byText("Запланировать")).click();
         $(Selectors.withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
-        $("[data-test-id='success-notificfnion'] .notification__content")
+        $("[data-test-id='success-notification'] .notification__content")
                 .should(text("Встреча успешно запланирована на " + firstMeetingDate))
                 .shouldBe(visible);
         $("[data-test-id=date] input").press(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
