@@ -23,10 +23,10 @@ public class DataGenerator {
         String[] cities = new String[]{"Москва"};
         return cities [new Random().nextInt(cities.length)];
     }
-    public static String generateName() {
+    public static String generateName(Faker faker) {
         return Registration.faker.name().fullName();
     }
-    public static String generatePhone() {
+    public static String generatePhone(Faker faker) {
         return Registration.faker.phoneNumber().phoneNumber();
     }
 
@@ -38,7 +38,7 @@ public class DataGenerator {
 
         public static UserInfo generateUser(String locale) {
             faker = new Faker(new Locale(locale));
-            return new UserInfo(generateCity(), generateName(), generatePhone());
+            return new UserInfo(generateCity(), generateName(faker), generatePhone(faker));
         }
     }
 
